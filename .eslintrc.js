@@ -5,12 +5,14 @@ module.exports = {
     node: true
   },
   extends: [
-    'standard'
+    'standard',
+    'plugin:jest/recommended'
   ],
   parserOptions: {
     ecmaVersion: 11,
     sourceType: 'module'
   },
   rules: {
-  }
+  },
+  plugins: ['jest']
 }
