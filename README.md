@@ -1,6 +1,6 @@
 # storyblok-markdown-richtext
 
-Utils library to work with Markdown/HTML and Richtext in the Storyblok.
+Utils library to work with Markdown and Richtext in the Storyblok.
 
 ## Usage
 
@@ -24,7 +24,7 @@ const richtextData = markdownToRichtext(`# Hello World`)
 
 ### markdownToRichtext
 
-Transform a markdown/html data into a Richtext object
+Transform a markdown data into a Richtext object
 
 ```js
 import { markdownToRichtext } from 'storyblok-markdown-richtext'
@@ -42,7 +42,7 @@ markdownToRichtext(`# Hello World`)
       },
       content: [
         {
-          text: 'Heading one',
+          text: 'Hello World',
           type: 'text'
         }
       ]
