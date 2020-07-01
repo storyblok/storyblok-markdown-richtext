@@ -1,5 +1,8 @@
 import { Schema } from 'prosemirror-model'
 
+/**
+ * @type {Schema}
+ */
 export default new Schema({
   nodes: {
     doc: {

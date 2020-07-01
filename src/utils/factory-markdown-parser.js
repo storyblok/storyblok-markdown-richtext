@@ -1,6 +1,11 @@
 import { MarkdownParser } from 'prosemirror-markdown'
 import markdownit from 'markdown-it'
 
+/**
+ * @method factoryMarkdownParser
+ * @param  {ProsemirrorModelSchema} schema schema from prosemirror-model package
+ * @return {MarkdownParser} an instance of MarkdownParser class
+ */
 const factoryMarkdownParser = (schema) => {
   const tokens = {
     blockquote: {
