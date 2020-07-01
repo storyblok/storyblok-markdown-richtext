@@ -1,4 +1,4 @@
-# storyblok-markdown-to-richtext
+# storyblok-markdown-richtext
 
 Utils library to work with Markdown/HTML and Richtext in the Storyblok.
 
