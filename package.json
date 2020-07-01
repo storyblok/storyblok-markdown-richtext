@@ -1,7 +1,7 @@
 {
   "name": "storyblok-markdown-richtext",
   "description": "A library to transform markdown to Richtext data",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "repository": "https://github.com/storyblok/storyblok-markdown-richtext.git",
   "license": "MIT",
   "author": "Emanuel Souza <eg@storyblok.com>",
@@ -17,7 +17,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "jest": "^26.1.0",
-    "microbundle": "^0.12.2"
+    "microbundle": "^0.12.2",
+    "semantic-release": "^17.1.1"
   },
   "source": "src/index.js",
   "main": "dist/index.umd.js",
@@ -32,7 +33,8 @@
     "test": "jest --verbose",
     "test:coverage": "jest --coverage",
     "lint": "eslint src/ tests/",
-    "lint:fix": "eslint src/ tests/ --fix"
+    "lint:fix": "eslint src/ tests/ --fix",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "markdown-it": "^11.0.0",
