@@ -1,16 +1,16 @@
-# storyblok-markdown-richtext
+# HTML/Markdown to Storyblok's Richtext converter
 
-Utils library to work with Markdown and Richtext in the Storyblok.
+This tool helps you parse html/markdown and convert it into the JSON format of Storyblok's richtext field.
 
 ## Usage
 
-Install the `storyblok-markdown-richtext`:
+Install the npm module `storyblok-markdown-richtext`:
 
 ```sh
 $ yarn add storyblok-markdown-richtext # npm install storyblok-markdown-richtext
 ```
 
-And uses the functions where you need:
+And use the functions where you need:
 
 ```js
 import { markdownToRichtext } from 'storyblok-markdown-richtext'
@@ -24,7 +24,7 @@ const richtextData = markdownToRichtext(`# Hello World`)
 
 ### markdownToRichtext
 
-Transform a markdown data into a Richtext object
+Transform html/markdown data into a Richtext object
 
 ```js
 import { markdownToRichtext } from 'storyblok-markdown-richtext'
