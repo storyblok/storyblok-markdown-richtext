@@ -20,6 +20,16 @@ const richtextData = markdownToRichtext(`# Hello World`)
 // ...
 ```
 
+To convert html to richtext you need to include a HTML to Markdown converter. In this example we use [turndown](https://github.com/domchristie/turndown).
+
+```
+import TurndownService from 'turndown'
+import { markdownToRichtext } from 'storyblok-markdown-richtext'
+
+const turndownService = new TurndownService()
+const richtextData = markdownToRichtext(turndownService.turndown('<h1>Hello world!</h1>'))
+```
+
 ## Functions
 
 ### markdownToRichtext
