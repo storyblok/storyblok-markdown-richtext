@@ -23,20 +23,22 @@
   "main": "dist/index.umd.js",
   "module": "dist/index.modern.module.js",
   "types": "types/index.d.ts",
-  "files": [
-    "dist/**.js*",
-    "dist/**/*.ts"
-  ],
   "scripts": {
     "build": "microbundle",
     "test": "jest --verbose",
     "test:coverage": "jest --coverage",
     "lint": "eslint src/ tests/",
-    "lint:fix": "eslint src/ tests/ --fix"
+    "lint:fix": "eslint src/ tests/ --fix",
+    "prepare": "npm run-script build"
   },
   "dependencies": {
     "markdown-it": "^11.0.0",
     "prosemirror-markdown": "^1.4.5",
     "prosemirror-model": "^1.10.0"
-  }
+  },
+  "keywords": [
+    "storyblok",
+    "markdown",
+    "richtext"
+  ]
 }
