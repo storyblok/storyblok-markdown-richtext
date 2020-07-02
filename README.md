@@ -1,6 +1,6 @@
-# HTML/Markdown to Storyblok's Richtext converter
+# HTML/Markdown to Richtext converter
 
-This tool helps you parse html/markdown and convert it into the JSON format of Storyblok's richtext field.
+This tool helps you to parse html/markdown and convert it into the JSON format of Storyblok's richtext field.
 
 ## Usage
 
