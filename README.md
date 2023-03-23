@@ -1,10 +1,11 @@
-# HTML/Markdown to Richtext converter
+# Storyblok Markdown to Richtext converter
 
-This tool helps you to parse html/markdown and convert it into the JSON format of Storyblok's richtext field.
+Do you need help converting HTML or markdown into Storyblok's richtext format? 
 
+Here's how to use it:
 ## Usage
 
-Install the npm module `storyblok-markdown-richtext`:
+Install the npm module `storyblok-markdown-richtext` by running:
 
 ```sh
 $ yarn add storyblok-markdown-richtext # npm install storyblok-markdown-richtext
@@ -20,7 +21,7 @@ const richtextData = markdownToRichtext(`# Hello World`)
 // ...
 ```
 
-To convert html to richtext you need to include a HTML to Markdown converter. In this example we use [turndown](https://github.com/domchristie/turndown).
+To convert HTML to richtext, you'll also need an HTML to markdown converter. In the example below, we use [turndown](https://github.com/domchristie/turndown).
 
 ```js
 import TurndownService from 'turndown'
@@ -30,18 +31,20 @@ const turndownService = new TurndownService()
 const richtextData = markdownToRichtext(turndownService.turndown('<h1>Hello world!</h1>'))
 ```
 
-## Functions
 
 ### markdownToRichtext
 
-Transform html/markdown data into a Richtext object
+This function transforms your HTML or markdown data into a richtext JSON object. Here's an example:
 
 ```js
 import { markdownToRichtext } from 'storyblok-markdown-richtext'
 
-markdownToRichtext(`# Hello World`)
-/**
- * // Richtext object
+const richtextObject = markdownToRichtext(`# Hello World`)
+```
+
+The resulting richtext object will look like this:
+
+```
 {
   type: 'doc',
   content: [
@@ -59,8 +62,6 @@ markdownToRichtext(`# Hello World`)
     }
   ]
 }
- *
-* /
 ```
 
 ---

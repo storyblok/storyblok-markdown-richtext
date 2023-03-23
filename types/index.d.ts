@@ -1,10 +1,2 @@
-type Richtext = {
-  doc: string;
-  content: Array<Object>;
-}
-
-declare function markdownToRichtext(content: string): Richtext;
-
-export {
-  markdownToRichtext
-};
+declare const markdownToRichtext: (content: any) => any;
+export { markdownToRichtext };

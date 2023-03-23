@@ -1,4 +1,4 @@
-import markdownToRichtext from '../../src/parser/markdown-to-richtext'
+import { markdownToRichtext } from '../../dist/index.js'
 import complexExample from '../mocks/complex-example'
 
 describe('test markdownToRichtext function', () => {
