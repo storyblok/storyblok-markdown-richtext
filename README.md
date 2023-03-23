@@ -1,8 +1,9 @@
 # Storyblok Markdown to Richtext converter
 
-Do you need help converting HTML or markdown into Storyblok's richtext format? 
+Do you need help converting HTML or markdown into Storyblok's richtext format?
 
 Here's how to use it:
+
 ## Usage
 
 Install the npm module `storyblok-markdown-richtext` by running:
@@ -28,9 +29,10 @@ import TurndownService from 'turndown'
 import { markdownToRichtext } from 'storyblok-markdown-richtext'
 
 const turndownService = new TurndownService()
-const richtextData = markdownToRichtext(turndownService.turndown('<h1>Hello world!</h1>'))
+const richtextData = markdownToRichtext(
+	turndownService.turndown('<h1>Hello world!</h1>')
+)
 ```
-
 
 ### markdownToRichtext
 
