@@ -1,7 +1,7 @@
 {
   "name": "storyblok-markdown-richtext",
   "description": "A library to transform markdown to Richtext data",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": "https://github.com/storyblok/storyblok-markdown-richtext.git",
   "license": "MIT",
   "authors": [
