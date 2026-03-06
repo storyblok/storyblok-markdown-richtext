@@ -1,7 +1,8 @@
 # Storyblok Markdown to Richtext converter
 
 > [!WARNING]  
-> **This package is deprecated.** Please use [@storyblok/richtext](https://www.storyblok.com/docs/libraries/js/rich-text), both to render and parse, including Markdown or HTML to Storyblok Richtext format.
+> **This package is deprecated.** Use [@storyblok/richtext](https://www.storyblok.com/docs/libraries/js/rich-text) instead. It supports both rendering and parsing, including
+  Markdown/HTML to Storyblok Richtext conversion.
 
 ---
 
